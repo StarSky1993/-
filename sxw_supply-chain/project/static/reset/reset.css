@@ -1,0 +1,57 @@
+/*清除标签默认样式 设置初始化*/
+*{
+	font-family: "Microsoft YaHei";
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body,ul,li,p,h1,h2,h3,h4,h5,h6,ol,dl,dd,form,button {
+	margin:0px;
+	padding:0px;
+}
+a {
+	text-decoration:none;
+}
+img {
+	border:none;
+	vertical-align:top;
+}
+ul,dl,ol {
+	list-style:none;
+}
+.clearfix:after{
+    display: block;
+    content: "";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    zoom: 1;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+h1,h2,h3,h4,h5,h6,b,th {
+	font-weight:normal;
+}
+input {
+	outline:none;
+	border:none;
+}
+select{
+  	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	outline: none;
+}
+button {
+	border:none;
+	outline:none;
+	vertical-align: top;
+	background: none;
+}
+i,em {
+	font-style:normal;
+}

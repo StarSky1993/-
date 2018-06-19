@@ -1,0 +1,279 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+//弹性盒
+.flex{
+	display: -webkit-flex;
+    display: -ms-flex;
+	display: flex;
+}
+// 侧边栏右边的盒子
+.allContent{
+    padding-left: 180px;
+    padding: 0px 20px;
+}
+/* 商品审核管理标题 */
+.alltitle {
+    height: 72px;
+    line-height: 72px;
+    font-size: 16px;
+    color: #333;
+    text-indent: 9px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    i {
+        width: 2px;
+        height: 15px;
+        position: absolute;
+        top: 28px;
+        left: 0px;
+        background: url('../icon/rectangle1.png') no-repeat;
+    }
+}
+/* 一排搜索框 A组 */
+.common-input {
+    height: 66px;
+    font-size: 14px;
+    display: flex;
+    justify-content:space-between;
+    .flex-l {
+        display: flex;
+        p{
+            margin-top: 15px;
+            label {
+                color: #999;
+                display: block;
+                width: 75px;
+                height: 34px;
+                line-height: 34px;
+            }
+            input, select {
+                width: 150px;
+                height: 34px;
+                border: 1px solid #ccc;
+                padding-left: 9px;
+            }
+            input {
+                color: #333;
+                .sh::-webkit-input-placeholder {
+                    color: #ccc;
+                }
+            }
+        }
+        p:nth-child(1) {
+            width: 225px;
+        }
+        p:nth-child(2) {
+            width: 223px;
+            position: relative;
+            margin-right: 29px;
+        }
+        p:nth-child(3) {
+            width: 393px;
+            input {
+                width: 328px;
+            }
+            button {
+                width:64px;
+                height:34px;
+                background:#0099cc;
+                color:#fff;
+                cursor:pointer
+            }
+        }
+    }
+    .flex-r {
+        display: flex;
+        justify-content: flex-end;
+        p:nth-child(4) {
+            width: 195px;
+        }
+    }
+}
+.common_down {
+    display:block;
+    width:27px;
+    height:34px;
+    background:url('../icon/down2.png') no-repeat;
+    background-size: 27px 32px;
+    position:absolute;
+    top:1px;right:1px;
+    pointer-events:none;
+}
+.mr {
+    margin-right: 20px;
+}
+.pt {
+    padding-top: 15px;
+}
+.btn{
+    height: 34px;
+    cursor: pointer;
+}
+.btn1 {
+    width: 78px;
+    border: 1px solid #ddd;
+    margin-right: 15px;
+    background-color: #f7f7f7;
+    text-indent: 18px;
+    background: url('../icon/refurbish.png') no-repeat;
+    background-position: 16px 11px;
+}
+.btn2 {
+    width: 100px;
+    background-color: #0099cc;
+    background-position: 20px 20px;
+    color: #fff;
+    text-indent: 10px;
+    position: relative;
+}
+.common-i {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    background: url('../icon/rectangle11.png') no-repeat;
+}
+/* 商品审核表格样式 */
+table {
+    width:100%;
+    border:1px solid #e1e6eb;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #999;
+    background-color: #f5f6fa;
+}
+table tr {
+    height: 34px;
+
+}
+table tr th {
+    text-align: left;
+}
+table tr td {
+    color: #1a1a1a;
+}
+table tbody tr td:nth-child(6) {
+    color: #0099cc;
+    cursor: pointer;
+}
+table tbody tr:nth-child(odd){
+    background-color: #fff;
+}
+table tbody tr:hover{
+    background:#73B1E0;color:#FFF;
+}
+//排序图标盒子
+.sort_icon {
+    position: relative;
+    margin-left: 7px;
+}
+//升序盒子
+.sort_ascending {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid #999;
+    top: 8%
+}
+//降序盒子
+.grade_down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #999;
+    top: 60%;
+}
+//升序高亮
+.black_up {
+    border-bottom: 7px solid #000;
+}
+//降序高亮
+.black_down {
+    border-top: 7px solid #000;
+}
+//分页盒子
+.table_footer {
+    height: 49px;
+    border: 1px solid #e1e6eb;
+    border-top: none;
+    position: relative;
+}
+.pagination_box {
+    height: 49px;
+    position: absolute;
+    right: 0px;top: 0px;
+}
+.pagination_box p {
+    margin-right: 15px;
+    float: left;
+    line-height: 49px;
+}
+.pagination  {
+    float: right;
+    margin-top: 9px;
+    margin-right: 15px;
+}
+.pagination_box p {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #888;
+}
+.pagination button, .pagination span {
+    width: 31px;
+    height: 30px;
+    border: 1px solid #ddd;
+    float: left;
+}
+.pagination .home_page {
+    background: url('../../assets/icon/doubl_arrow_L.png') no-repeat;
+    background-position: 50%;
+}
+.pagination .pre_page {
+    background: url('../../assets/icon/arrow_L.png') no-repeat;
+    background-position: 50%;
+}
+.pagination .current_page {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    background-color: #0099cc;
+}
+.pagination .next_page {
+    background: url('../../assets/icon/arrow_R.png') no-repeat;
+    background-position: 50%;
+}
+.pagination .last_page {
+    background: url('../../assets/icon/doubl_arrow_R.png') no-repeat;
+    background-position: 50%;
+}
+//左浮动
+.fl{
+    float: left;
+}
+//右浮动
+.fr{
+    float: right;
+}
+//清除浮动
+.clearfix:after{
+    display: block;
+    content: "";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    zoom: 1;
+}
