@@ -1,23 +1,17 @@
 import Vue from 'vue'
 import App from './App'
-//引入路由
 import router from './router'
 //清除默认样式
 import './assets/style/reset.less'
 //引入公共样式
 import './assets/style/common.less'
-//引入UI组件
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-Vue.use(ElementUI)
+//图片懒加载
+import VueLazyload from 'vue-lazyload'
+// 或者添加VueLazyload 选项
+Vue.use(VueLazyload)
 //引入动画
 import animate from "animate.css"
 Vue.use(animate)
-//引入表格
-import 'vue-easytable/libs/themes-base/index.css'
-import {VTable,VPagination} from 'vue-easytable'
-Vue.use(VTable)
-Vue.use(VPagination)
 //引入axios请求
 import Axios from 'axios'
 //跨域代理 加$
@@ -26,9 +20,6 @@ Vue.prototype.$axios = Axios
 Vue.config.productionTip = false
 //引入请求头
 import qs from 'qs'
-//引入vue-layer弹层
-import layer from 'vue-layer';
-Vue.prototype.$layer = layer(Vue);
 //默认路径
 Axios.defaults.baseURL = "BASE_URL";
 // //设置axios   请求拦截器
@@ -65,6 +56,8 @@ Axios.defaults.baseURL = "BASE_URL";
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+  	App
+  },
   template: '<App/>'
 })

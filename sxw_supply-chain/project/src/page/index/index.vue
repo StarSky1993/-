@@ -24,6 +24,11 @@
 	import Aside from '../../components/aside/aside'
 	export default {
 		name: 'index',
+		data() {
+			return {
+
+			}
+		},
 		mounted(){
 
 		},

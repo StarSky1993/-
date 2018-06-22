@@ -15,6 +15,7 @@
             height: 360px;
             margin-right: 30px;
             margin-bottom: 30px;
+            cursor: pointer;
             &:nth-child(1) {
                 background: url('./imgs/Delivered.png') no-repeat;
                 background-size: 100% 100%;
@@ -38,6 +39,7 @@
             height: 360px;
             margin-right: 30px;
             margin-bottom: 30px;
+            cursor: pointer;
             &:nth-child(1) {
                 background: url('./imgs/low_stocks.png') no-repeat;
                 background-size: 100% 100%;
@@ -56,12 +58,7 @@
 </style>
 
  <template>
-	<div id="home"
-    v-loading="loading"
-    element-loading-text="拼命加载中"
-    element-loading-spinner="el-icon-loading"
-    element-loading-background="rgba(0, 0, 0, 0.8)"
-    >
+	<div id="home">
         <ul class="home_nav1 flex">
             <li></li>
             <li></li>
@@ -80,7 +77,6 @@
 		name: 'home',
 		data() {
 			return {
-                loading: true,
                 //发货
                 delive: '2293',
                 take_delivery: '82',

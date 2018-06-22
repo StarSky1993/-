@@ -31,10 +31,10 @@
                 background-size: 27px 32px;
             }
             .i1 {
-                left: 191px;top: 1px;
+                left: 186px;top: 1px;
             }
             .i2 {
-                right: 83px;top: 1px;
+                right: 92px;top: 1px;
             }
         }
         .flex-r {
@@ -42,6 +42,9 @@
                  margin-right: 0px;
             }
         }
+    }
+    .mr {
+        margin-right: 30px;
     }
 </style>
 

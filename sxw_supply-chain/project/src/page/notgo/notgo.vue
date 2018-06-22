@@ -151,7 +151,7 @@
 		line-height: 71px;
 		font-size: 14px;
 		color: #333;
-		background: url('./imgs/rectangle2.png') no-repeat;
+		background: url('../../assets/icon/rectangle2.png') no-repeat;
 		background-size: 2px 18px;
 		background-position: 48px 28px;
 		border-bottom: 1px solid #e1e6eb;
@@ -294,7 +294,7 @@
 		position: absolute;
 		top: 1px;
 		right: 24px;
-		background: url('./imgs/down2.png') no-repeat;
+		background: url('../../assets/icon/down2.png') no-repeat;
 		background-size: 27px 34px;
 	}
 	.A {
@@ -306,7 +306,7 @@
 		position: absolute;
 		top: 1px;
 		left: 443px;
-		background: url('./imgs/down2.png') no-repeat;
+		background: url('../../assets/icon/down2.png') no-repeat;
 		background-size: 27px 34px;
 	}
 	#upload {

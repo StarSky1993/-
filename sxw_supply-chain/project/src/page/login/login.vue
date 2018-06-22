@@ -27,7 +27,7 @@
 				</div>
 				<!-- 提交 -->
 				<div class="submit" >
-					<el-button  class="loading1" style="width:270px; height:48px;" type="primary"  @click="login">登录</el-button>
+					<button class="loading1" style="width:270px; height:48px;" @click="login">登录</button>
 				</div>
 			</div>
 			<span class="showtip" v-show="showtip">{{tip}}</span>
@@ -55,8 +55,8 @@
 		height: 400px;
 		background-color: #fff;
 		margin: auto;
-		
 		border-radius: 9px 9px 9px 9px;
+		position: relative;
 
 	}
 	.login_title {
@@ -188,9 +188,16 @@
 		text-indent: 32px;
 		position: absolute;
 		top: 72px;
-		left: 85px;
+		left: 120px;
 		background: url('./imgs/wrong.png') no-repeat;
 		background-position: 10px 6px;
+	}
+	.loading1  {
+		background-color: #3693b3;
+		font-size: 18px;
+		color: #fff;
+		font-weight: bold;
+		cursor: pointer;
 	}
 </style>
 

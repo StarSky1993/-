@@ -11,7 +11,7 @@
 				<div class="dispose" style="cursor:not-allowed;"></div>
 				<div class="header_map">欢迎，浙江仙居聚贤庄杨梅小明</div>
 				<!-- <div class="quit" @click="quit"></div> -->
-				<el-button class="quit" type="text" @click="quit"></el-button>
+				<button class="quit" @click="bus"></button>
 			</div>
 		</div>
 	</div>
@@ -97,6 +97,7 @@
 </style>
 
 <script>
+import Bus from '../../assets/js/bus'
 	export default {
 		name: 'Header',
 		mounted(){
@@ -105,44 +106,16 @@
 		data() {
 			return {
 				animated: false,
-				swing:false
+				swing:false,
 			}
 		},
 		components: {
 
 		},
 		methods: {
-			quit() {
-				const h = this.$createElement;
-				this.$msgbox({
-					title: '提示',
-					message: h('p', null, [
-            			h('span', null, '您确定要'),
-            			h('font',{ style: 'color: red', },'退出登录？')
-          			]),
-          			showCancelButton: true,
-          			confirmButtonText: '确定',
-          			cancelButtonText: '取消',
-          			beforeClose: (action, instance, done) => {
-            			if (action === 'confirm') {
-              				instance.confirmButtonLoading = true;
-              				localStorage.isLogin=false;
-							this.$router.push({path:'/login'});
-                				done();
-                				setTimeout(() => {
-                  					instance.confirmButtonLoading = false;
-                				}, 300);
-            			} else {
-              				done();
-            			}
-          			}
-				}).then(action => {
-          			this.$message({
-            			type: 'success',
-
-            			message: '成功退出登录'
-          			});
-        		});
+			//点击退出登录
+			bus() {
+				Bus.$emit('hidden',true)
 			},
 			remind() {
 				this.animated = true;
